@@ -1,4 +1,8 @@
 Revision history for Perl extension Template::Plugin::Comma
 
+0.02
+	- Added Template dependency on Makefile.PL
+	- Added reference to Number::Format
+
 0.01  Thu Jul 25 16:29:37 2002
 	- original version

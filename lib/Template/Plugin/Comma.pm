@@ -2,7 +2,7 @@ package Template::Plugin::Comma;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.01;
+$VERSION = 0.02;
 
 require Template::Plugin::Filter;
 use base qw(Template::Plugin::Filter);
@@ -58,6 +58,11 @@ Template::Plugin::Comma is a plugin for TT, which allows you to
 commify your numbers in templates. This would be especially useful for
 prices.
 
+=head1 NOTE
+
+This module does nothing for I18N. If you want it, try
+Template::Plugin::Number::Format.
+
 =head1 AUTHOR
 
 Original idea by Yoshiki Kurihara E<lt>kurihara@cpan.orgE<gt>
@@ -69,6 +74,6 @@ it under the same terms as Perl itself.
 
 =head1 SEE ALSO
 
-L<Template>, C<perldoc -q comma>
+L<Template>, C<Template::Plugin::Number::Format>
 
 =cut
