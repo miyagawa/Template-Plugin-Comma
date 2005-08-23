@@ -1,5 +1,9 @@
 Revision history for Perl extension Template::Plugin::Comma
 
+0.04  Tue Aug 23 21:35:03 UTC 2005
+        * Fixed bug that '3.1415' gets translated to '3.1,415'
+          (Thanks to petek at bsod.net)
+
 0.03  Thu Nov 14 13:47:51 JST 2002
 	* Fixed memory leak due to Template::Plugin::Filter
 

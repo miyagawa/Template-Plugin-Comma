@@ -2,7 +2,7 @@ package Template::Plugin::Comma;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = 0.03;
+$VERSION = 0.04;
 
 require Template::Plugin;
 use base qw(Template::Plugin);
@@ -19,7 +19,7 @@ sub new {
 
 sub commify {
     local $_  = shift;
-    1 while s/([-+]?\d+)(\d{3})/$1,$2/;
+    1 while s/((?:\A|[^.0-9])[-+]?\d+)(\d{3})/$1,$2/s;
     return $_;
 }
 
